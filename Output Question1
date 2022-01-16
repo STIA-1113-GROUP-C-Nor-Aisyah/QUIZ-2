@@ -1,0 +1,18 @@
+Enter your salary:
+4500
+Enter your year of service(in year): 
+6
+Your bonus is RM225.0
+Enter your monthly salary for latest 3 month:
+4500
+5612
+3450
+Highest salary: 5612
+Lowest salary: 3450
+
+Enter your age:
+35
+45
+55
+Oldest: 55
+Youngest: 35
