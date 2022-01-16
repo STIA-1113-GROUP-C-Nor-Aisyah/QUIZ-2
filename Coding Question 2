@@ -1,0 +1,37 @@
+package quiz2;
+
+import java.util.Scanner;
+
+public class PrintArrayInStars {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner (System.in);
+		int NUM_ITEMS;
+		int [] items;
+		
+		System.out.println("Enter the number of items: ");
+		NUM_ITEMS = sc.nextInt();
+	
+	      items = new int[NUM_ITEMS];
+
+	      if (items.length > 0) {
+	    	  System.out.println("Enter the value of all items:");
+	         for (int i = 0; i < items.length; ++i) {
+	        	 items[i] = sc.nextInt();
+	         }
+	      for (int i = 0; i < items.length; ++i) {
+	         if (i == 0) {
+	        	 for (int j = 0; j < items.length; j++) {
+	        		 System.out.println("");
+	        		 System.out.print(j + ": ");
+	        	 for (int star = 1; star <= items[j]; star++) {  
+	                    System.out.print("*" );
+	              }
+	        	 }
+	         }
+	      }
+	      }
+	}
+}
+
