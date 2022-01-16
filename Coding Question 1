@@ -1,0 +1,66 @@
+package quiz2;
+
+import java.util.Scanner;
+
+public class question1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner (System.in);
+				
+		System.out.println("Enter your salary:");
+		int salary = sc.nextInt();
+		
+		System.out.println("Enter your year of service(in year): ");
+		int service = sc.nextInt();
+		
+		double bonus = (5 * salary) / 100;
+		
+		if(service > 5)
+			System.out.println("Your bonus is RM" + bonus);
+		else
+			System.out.println("Sorry. You didn't get bonus.");
+		
+		int [] monthlySalary = new int [3]; 
+		
+		System.out.println("Enter your monthly salary for latest 3 month:");
+		for(int i = 0; i < monthlySalary.length; i++)
+			monthlySalary[i] = sc.nextInt();
+		
+		int max = monthlySalary[0];
+	      int min = monthlySalary[0];
+	      
+	      for (int i = 1; i < monthlySalary.length; i++)
+	      {
+	         if(monthlySalary[i] > max)
+	             max = monthlySalary[i];
+	         if(monthlySalary[i] < min)
+	             min = monthlySalary[i];
+	      }
+
+	      System.out.println("Highest salary: " + max); 
+	      System.out.println("Lowest salary: " + min);
+	      
+	      int [] age = new int [3];
+	      
+	      System.out.println("");
+	      System.out.println("Enter your age:");
+	      for(int i = 0; i < age.length;i++) 
+	    	  age[i] = sc.nextInt();
+	      
+	      int oldest = age[0];
+	      int youngest = age[0];
+	      
+	      for (int i = 1; i < age.length; i++)
+	      {
+	         if(age[i] > oldest)
+	             max = age[i];
+	         if(age[i] < youngest)
+	             min = age[i];
+	      }
+
+	      System.out.println("Oldest: " + oldest); 
+	      System.out.println("Youngest: " + youngest);
+	      }
+	}
+
